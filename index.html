@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DONEVIN THEART</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init({
+            publicKey: "PAjCVZ_PAFsdRBhxg",
+            });
+        })();
+    </script>
+    
+</head>
+<body>
+    <header class="header">
+        <a class="logo" href="#Home">
+            DONEVIN <span>THEART</span>
+        </a>
+
+        <i class="bx bx-menu" id="menu-icon"></i>
+        
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="home" id="home">
+        <div class="home-content">
+            <h1>Hi, it's <span>THEART</span></h1>
+
+            <h3>I'm a <span>WEBDEVELOPER</span></h3>
+
+            <p>A web developer is technical, creative, and logical, solving complex problems with clean code, debugging efficiently, adapting quickly, collaborating effectively, and building responsive, user-friendly, modern websites while staying organized, detail-oriented, and passionate about innovation.</p>
+            
+            <div class="social-icon">
+                <a href="https://github.com/DTwhitewolf">
+                    <i class="bx bxl-github"></i>
+                </a>
+
+                <a href="https://github.com/DTwhitewolf">
+                    <i class="bx bxl-linkedin"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="home-img">
+            <img src="img/port_img.png" alt="picture that resemble me">
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="img/port_img.png" alt="picture that resemble me">
+        </div>
+
+        <div class="about-content">
+
+            <h2>about <span>ME</span></h2>
+            <p>I am a kind, honest, and compassionate person who values integrity, empathy, and hard work. Known for being reliable, thoughtful, and generous, I strive to uplift others through patience, respect, and ethical actions. Whether in personal growth or community, I embrace humility, loyalty, and optimism—always aiming to inspire and connect with authenticity and purpose.</p>
+
+        </div>
+    </section>
+
+    <section class="skills" id="skills">
+
+        <h2><span>SKILLS</span></h2>
+        <div class="cells">
+            <div class="cell">
+                <img src="img/HTML-img.png" alt="html logo">
+                <span>HTML</span>
+            </div>
+            <div class="cell">
+                <img src="img/CSS-img.png" alt="css logo">
+                <span>CSS</span>
+            </div>
+            <div class="cell">
+                <img src="img/PYTHON-img.png" alt="python logo">
+                <span>PYTHON</span>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="contact" id="contact">
+
+        <h2 class="contact">Contact <span>ME</span></h2>
+
+        <form action="#">
+
+            <div class="input-group1">
+                <div class="input-box">
+                    <input type="text" name="fname" id="fname" placeholder="Full Name">
+                    <input type="email" name="email" id="email" placeholder="Email">
+                </div>
+
+                <div class="input-box">
+                    <input type="number" name="phone" id="phone" placeholder="Phone Number">
+                    <input type="text" name="subject" id="subject" placeholder="Subject">
+                </div>
+
+            </div>
+            <div class="input-group2">
+                <textarea name="message" placeholder="Your Message" id="message" cols="30" rows="10"></textarea>
+                <input type="submit" name="submit" value="Send Message" class="btn" onsubmit="sendEmail()">
+            </div>
+
+        </form>
+
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
